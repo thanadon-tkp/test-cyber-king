@@ -1,0 +1,156 @@
+import { defineStore } from "pinia";
+
+export const useDashboardStore = defineStore("dashboard", {
+  state: () => ({
+    orders: [
+      {
+        order_id: "01001",
+        user_id: 1,
+        amount: 2590.5,
+        status: "paid",
+        created_at: "2025-01-12T10:21:00Z",
+      },
+      {
+        order_id: "01002",
+        user_id: 2,
+        amount: 1200,
+        status: "pending",
+        created_at: "2025-02-13T14:05:00Z",
+      },
+      {
+        order_id: "01003",
+        user_id: 3,
+        amount: 780.75,
+        status: "failed",
+        created_at: "2025-03-14T09:40:00Z",
+      },
+      {
+        order_id: "01004",
+        user_id: 4,
+        amount: 3400,
+        status: "paid",
+        created_at: "2025-04-15T16:30:00Z",
+      },
+      {
+        order_id: "01005",
+        user_id: 2,
+        amount: 1999.99,
+        status: "paid",
+        created_at: "2025-05-16T08:15:00Z",
+      },
+      {
+        order_id: "01006",
+        user_id: 5,
+        amount: 550,
+        status: "pending",
+        created_at: "2025-06-17T12:00:00Z",
+      },
+      {
+        order_id: "01007",
+        user_id: 1,
+        amount: 870.25,
+        status: "paid",
+        created_at: "2025-07-18T11:45:00Z",
+      },
+      {
+        order_id: "01008",
+        user_id: 6,
+        amount: 2999.5,
+        status: "failed",
+        created_at: "2025-08-19T19:20:00Z",
+      },
+      {
+        order_id: "01009",
+        user_id: 7,
+        amount: 4300,
+        status: "paid",
+        created_at: "2025-09-20T15:10:00Z",
+      },
+      {
+        order_id: "01010",
+        user_id: 3,
+        amount: 1500,
+        status: "pending",
+        created_at: "2025-10-21T07:55:00Z",
+      },
+      {
+        order_id: "01011",
+        user_id: 4,
+        amount: 2100.75,
+        status: "paid",
+        created_at: "2025-11-22T10:10:00Z",
+      },
+      {
+        order_id: "01012",
+        user_id: 5,
+        amount: 980,
+        status: "pending",
+        created_at: "2025-12-23T13:25:00Z",
+      },
+      {
+        order_id: "01013",
+        user_id: 2,
+        amount: 1570.5,
+        status: "failed",
+        created_at: "2025-07-24T09:50:00Z",
+      },
+      {
+        order_id: "01014",
+        user_id: 6,
+        amount: 3200,
+        status: "paid",
+        created_at: "2025-07-25T18:00:00Z",
+      },
+      {
+        order_id: "01015",
+        user_id: 7,
+        amount: 450,
+        status: "pending",
+        created_at: "2025-07-26T12:45:00Z",
+      },
+      {
+        order_id: "01016",
+        user_id: 1,
+        amount: 1100.99,
+        status: "paid",
+        created_at: "2025-07-27T16:30:00Z",
+      },
+      {
+        order_id: "01017",
+        user_id: 3,
+        amount: 890.25,
+        status: "failed",
+        created_at: "2025-07-28T11:05:00Z",
+      },
+      {
+        order_id: "01018",
+        user_id: 5,
+        amount: 2700,
+        status: "paid",
+        created_at: "2025-07-29T17:20:00Z",
+      },
+      {
+        order_id: "01019",
+        user_id: 2,
+        amount: 1300.5,
+        status: "pending",
+        created_at: "2025-07-30T08:40:00Z",
+      },
+      {
+        order_id: "01020",
+        user_id: 4,
+        amount: 3750,
+        status: "paid",
+        created_at: "2025-07-31T14:55:00Z",
+      },
+    ],
+  }),
+  getters: {
+    // doubleCount: (state) => state.count * 2,
+  },
+  actions: {
+    // increment() {
+    //   this.count++
+    // },
+  },
+});
